@@ -12,4 +12,9 @@ jobs:
 
     steps:
       - name: Run a one-line script
-        run: touch test.txt
+        run: |
+          cd ~/backend
+          echo "connect!!"
+          whoami
+          git clone https://github.com/dmin0211/Web-DB-Module
+        
