@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: cocoo-server
+    runs-on: self-hosted
 
     steps:
       - name: Run a one-line script
