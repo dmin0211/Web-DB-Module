@@ -8,16 +8,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: cocoo-server
 
     steps:
       - name: Run a one-line script
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.REMOTE_IP }}
-          username: ${{ secrets.REMOTE_SSH_ID }}
-          password: ${{ secrets.REMOTE_SSH_PW }}
-          port: ${{ secrets.REMOTE_SSH_PORT }}
-          script: |
-            whoami
-            git clone origin main
+        run: touch test.txt
