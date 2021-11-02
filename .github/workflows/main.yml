@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Run a one-line script
         run: |
-          cd ~/backend
-          echo "connect!!"
-          whoami
-          git clone https://github.com/dmin0211/Web-DB-Module
+          cd ~/backend/backend
+          git pull origin main
+          npm install
+          npm run build
         
